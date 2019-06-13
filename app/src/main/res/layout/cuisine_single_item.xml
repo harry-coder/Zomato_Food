@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.MaterialComponents.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+
+
+    android:minHeight="150dp"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/im_cuisineImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_cuisineName"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+
+
+            android:layout_toStartOf="@+id/tv_rating"
+            android:layout_toEndOf="@+id/im_cuisineImage"
+            android:text="Pizza Valley"
+
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cuisineName"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/im_cuisineImage"
+            android:text="Faridabad" />
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/tv_city"
+            android:layout_margin="5dp"
+            android:layerType="software"
+            android:layout_toEndOf="@+id/im_cuisineImage"
+            android:background="@drawable/view_background" />
+
+        <TextView
+            android:id="@+id/currency"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/view1"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/im_cuisineImage"
+            android:background="@drawable/currency_background"
+            android:gravity="center"
+            android:text="₹"
+            android:textColor="#fff"
+            android:textSize="10sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/currency"
+            android:text="200 per person"
+            android:textSize="11sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+
+            android:layout_alignParentEnd="true"
+           android:gravity="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/tv_price">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+
+                android:src="@drawable/location_holder"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Punjabi Bagh"
+                android:textSize="11sp"
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:text="4.3"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@drawable/rating_background"
+            android:layout_margin="5dp"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
